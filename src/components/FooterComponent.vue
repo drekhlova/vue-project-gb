@@ -3,7 +3,7 @@
       <div class="brand">
         <div class="brand__content">
           <img class="brand__logo" src="../assets/images/Logo.jpg" alt="Logo" />
-          <h1 class="brand__title"><a href="#">Interno</a></h1>
+          <h1><a href="#">Interno</a></h1>
         </div>
         <p class="brand__text">
           It is a long established fact that a reader will be distracted
@@ -62,9 +62,15 @@ export default {
     padding-bottom: 18px;
     &__content {
       display: flex;
+      align-items: center;
       gap: 10px;
+      margin-bottom: 26px;
     }
-    &__title {
+    &__logo {
+      width: 34px;
+      height: 34px;
+    }
+    & a {
       font-family: $familyTitle;
       color: $blackTextColor;
       font-size: 40px;

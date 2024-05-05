@@ -49,7 +49,7 @@ export default {
  $grayTextColor: rgb(77, 80, 83);
  .counter {
   background-color: rgb(244, 240, 236);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   text-align: center;
   padding-top: 150px;
@@ -70,6 +70,6 @@ export default {
   height: 130px;
   margin-left: 74px;
   margin-right: 74px;
-}
+  }
 }
  </style>

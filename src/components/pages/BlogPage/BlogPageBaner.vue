@@ -30,7 +30,8 @@ export default {
  <style lang="scss" scoped>
  $familyTitle: "DM Serif Display";
  $familyText: "Jost";
- $font-400: 400;
+ $blackTextColor: rgb(41, 47, 54);
+ $grayTextColor: rgb(77, 80, 83);
  .banner {
     background-image: url("../../../assets/images/banner_top.jpg");
     height: 356px;
@@ -40,25 +41,18 @@ export default {
     &__intro {
        text-align: center;
        background: #fff;
-       padding: 41px 78px;
-       border-top-left-radius: 37px;
-       border-top-right-radius: 37px;
+       padding: 40px 78px;
+       border-top-left-radius: 36px;
+       border-top-right-radius: 36px;
        &-title {
-          color: #292f36;
+          color: $blackTextColor;
           font-family: $familyTitle;
           font-size: 50px;
-          font-style: normal;
-          font-weight: $font-400;
-          line-height: 125%;
        }
        &-text {
-          color: #4d5053;
+          color: $grayTextColor;
           font-family: $familyText;
           font-size: 22px;
-          font-style: normal;
-          font-weight: $font-400;
-          line-height: 150%;
-          letter-spacing: 0.22px;
        }
     }
  }

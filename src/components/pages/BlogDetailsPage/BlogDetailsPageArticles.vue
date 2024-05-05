@@ -120,7 +120,8 @@ export default {
   <style lang="scss" scoped>
   $familyTitle: "DM Serif Display";
   $familyText: "Jost";
-  $font-400: 400;
+  $blackTextColor: rgb(41, 47, 54);
+  $grayTextColor: rgb(77, 80, 83);
   .blog-details__wrap {
      margin-top: 200px;
      display: flex;
@@ -132,13 +133,9 @@ export default {
   .article {
      margin-bottom: 96px;
      &__title {
-        color: #292f36;
+        color:  $blackTextColor;
         font-family: $familyTitle;
         font-size: 50px;
-        font-style: normal;
-        font-weight: $font-400;
-        line-height: 125%;
-        letter-spacing: 1px;
         margin-bottom: 20px;
      }
      &__img {
@@ -151,29 +148,19 @@ export default {
         display: flex;
         justify-content: space-between;
         margin-bottom: 46px;
-        color: #4d5053;
+        color: $grayTextColor;
         font-family: $familyText;
         font-size: 16px;
-        font-style: normal;
-        font-weight: $font-400;
-        line-height: 150%;
-        letter-spacing: 0.16px;
-        text-transform: capitalize;
-     }
      &__text {
-        color: #4d5053;
+        color: $grayTextColor;
         font-family: $familyText;
         font-size: 22px;
-        font-style: normal;
-        font-weight: $font-400;
-        line-height: 150%;
-        letter-spacing: 0.22px;
      }
      &__list {
         margin-top: 24px;
-        margin-bottom: 23px;
+        margin-bottom: 22px;
         display: flex;
-        width: 732.389px;
+        width: 732px;
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
@@ -186,20 +173,12 @@ export default {
               color: #cda274;
               font-family: $familyTitle;
               font-size: 20px;
-              font-style: normal;
-              font-weight: $font-400;
-              line-height: 125%;
-              letter-spacing: 0.4px;
            }
         }
         &-item {
-           color: #4d5053;
+           color: $grayTextColor;
            font-family: $familyText;
            font-size: 22px;
-           font-style: normal;
-           font-weight: $font-400;
-           line-height: 150%;
-           letter-spacing: 0.22px;
         }
      }
   }
@@ -211,13 +190,9 @@ export default {
         gap: 24px;
      }
      &__title {
-        color: #292f36;
+        color:  $blackTextColor;
         font-family: $familyTitle;
         font-size: 25px;
-        font-style: normal;
-        font-weight: $font-400;
-        line-height: 125%;
-        letter-spacing: 0.5px;
      }
      &__buttons {
         display: grid;
@@ -226,25 +201,21 @@ export default {
         &-item {
            cursor: pointer;
            background: #f4f0ec;
-           padding-top: 9px;
-           padding-bottom: 9px;
+           padding-top: 8px;
+           padding-bottom: 8px;
            border-radius: 10px;
            border: none;
-           color: #292f36;
+           color:  $blackTextColor;
            text-align: center;
            font-family: $familyText;
            font-size: 18px;
-           font-style: normal;
-           font-weight: $font-400;
-           line-height: 125%;
-           letter-spacing: 0.36px;
         }
      }
   }
   .info-blok {
-     margin-bottom: 27px;
-     margin-top: 35px;
-     padding: 53px 227px;
+     margin-bottom: 26px;
+     margin-top: 34px;
+     padding: 52px 226px;
      background: #f4f0ec;
      border-radius: 50px;
      display: flex;
@@ -260,9 +231,6 @@ export default {
         font-family: $familyTitle;
         font-size: 200px;
         font-style: italic;
-        font-weight: $font-400;
-        line-height: 125%;
-        letter-spacing: 4px;
      }
      &__text {
         color: #cda274;
@@ -270,9 +238,7 @@ export default {
         font-family: $familyTitle;
         font-size: 25px;
         font-style: italic;
-        font-weight: $font-400;
-        line-height: 125%;
-        letter-spacing: 0.5px;
      }
   }
+}
   </style>

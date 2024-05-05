@@ -98,22 +98,19 @@ export default {
  <style lang="scss" scoped>
  $familyText: "Jost";
  $familyTitle: "DM Serif Display";
- $font-400: 400;
+ $blackTextColor: rgb(41, 47, 54);
+ $grayTextColor: rgb(77, 80, 83);
  $font-500: 500;
  .blog__title-left {
    text-align: left;
    margin-top: 150px;
    margin-bottom: 30px;
-   color: #292f36;
+   color: $blackTextColor;
    font-family: $familyTitle;
    font-size: 50px;
-   font-style: normal;
-   font-weight: $font-400;
-   line-height: 125%;
-   letter-spacing: 1px;
  }
  .count__page {
-    margin-top: 51px;
+    margin-top: 50px;
     margin-bottom: 200px;
     display: flex;
     justify-content: center;
@@ -131,13 +128,10 @@ export default {
        height: 52px;
        border-radius: 52px;
        &-text {
-          color: #292f36;
+          color: $grayTextColor;
           font-family: $familyText;
           font-size: 16px;
-          font-style: normal;
           font-weight: $font-500;
-          line-height: 150%;
-          text-transform: capitalize;
        }
        &:hover {
           background: #f4f0ec;
