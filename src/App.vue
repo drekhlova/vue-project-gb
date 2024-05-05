@@ -1,28 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderComponent></HeaderComponent>
+    <HomePageBaner></HomePageBaner>
+    <HomePageProject></HomePageProject>
+    <HomePageCounter></HomePageCounter>
+    <HomePageArticles></HomePageArticles>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
+import HomePageBaner from './components/pages/HomePage/HomePageBaner.vue'
+import HomePageProject from './components/pages/HomePage/HomePageProject.vue'
+import HomePageCounter from './components/pages/HomePage/HomePageCounter.vue'
+import HomePageArticles from './components/pages/HomePage/HomePageArticles.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    HomePageBaner,
+    HomePageProject,
+    HomePageCounter,
+    HomePageArticles,
+    FooterComponent
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+$widthSite: 1200px;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+.center {
+   padding-left: calc(50% - $widthSite / 2);
+   padding-right: calc(50% - $widthSite / 2);
 }
 </style>
