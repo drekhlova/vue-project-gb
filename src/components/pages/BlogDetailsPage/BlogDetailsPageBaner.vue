@@ -26,6 +26,7 @@ export default {
  <style lang="scss" scoped>
  .banner-details {
     background-image: url("../../../assets/images/blog-details-header.jpg");
+    background-size: cover;
     height: 356px;
  }
  </style>

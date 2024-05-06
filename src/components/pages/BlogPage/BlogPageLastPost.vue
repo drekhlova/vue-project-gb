@@ -65,7 +65,7 @@ export default {
        border-radius: 50px;
     }
     &__content {
-       width: 489px;
+       width: 488px;
        &-title {
           margin-bottom: 22px;
           color: $blackTextColor;
